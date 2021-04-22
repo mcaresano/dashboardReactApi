@@ -1,6 +1,6 @@
 
 import HeaderUser from "../Header";
-import UsuariosItem from "./components/UsuariosItem";
+import UsersList from "./components/UsersList";
 import Footer from "../Footer";
 import ProductsList from "./components/ProductsList";
 import LoadProducts from "./components/LoadProducts";
@@ -51,16 +51,12 @@ function ContentWrapper() {
                                 </div>
                                 <div className="card-body">
                                     <div className="row container-fluid">
-                                       <div className="col-sm-1 border-bottom">Id</div>
                                        <div className="col-sm-2 border-bottom">Apellido</div>
                                        <div className="col-sm-2 border-bottom">Nombre</div>
                                        <div className="col-sm-4 border-bottom">Email</div>
                                        <div className="col-sm-2 border-bottom">Tipo de Usuario</div>
                                     </div>
-                                    <UsuariosItem id="2" ap="Caresano" no="Marcelo" e="marcelo@gmail.com" t="1" />
-                                    <UsuariosItem id="3" ap="Caresano" no="Sofia" e="Email" t="0" />
-                                    <UsuariosItem id="4" ap="Gurvich" no="Carolina" e="Email" t="0" />
-                                    <UsuariosItem id="5" ap="Valenci" no="Tito" e="Email" t="0" />
+                                    <UsersList /> 
                                  </div>
                             </div>
                         </div>

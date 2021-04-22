@@ -11,10 +11,10 @@ const [products, setProducts] = useState([]);
        .then (response => response.json())
        .then (data =>{
             setProducts(data.data);
-            console.log(products);
+       
              })
      },[])
-
+     
      return(
         <div>
             { products.map((product, i ) => {

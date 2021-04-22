@@ -5,30 +5,18 @@ export default function LoadProducts (){
 
 const [products, setProducts] = useState(0);
 
-const[usersAdmin, setUserAdmin] = useState(0);
-const[usersClient, setUserClient] = useState(0);
 
     useEffect(() => {
         fetch('https://grupo11-vinoteca.herokuapp.com/api/products')
        .then (response => response.json())
        .then (data =>{
-        console.log (data);
-  
         setProducts(data.meta.total_products);
         
         })
      },[])
 
 
-     useEffect(() => {
-         fetch('https://grupo11-vinoteca.herokuapp.com/api/users')
-         .then (response => response.json())
-         .then (data =>{
-          console.log (data);
     
-          setUserAdmin(data.meta.total_users);
-  
-        }, [])
 
      return (
        <div className="row">

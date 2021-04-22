@@ -1,5 +1,5 @@
 import {useState, useEffect} from "react";
-import Wine from "./Wine";
+import UsuariosItem from "./UsuariosItem";
 
 export default function Loadusers (){
 
@@ -11,14 +11,15 @@ const [users, setUsers] = useState([]);
        .then (response => response.json())
        .then (data =>{
             setUsers(data.data);
-            console.log(users);
+        
              })
      },[])
+
      return(
         <div>
-            { users.map((user, i ) => {
+            {   users.map((user, i ) => {
                 return(
-                <Wine key={`vino_${i}`} name={user.name} price={user.price} cepa={user.cepas.name} desc = {user.description}  />
+                <UsuariosItem key={`user_${i}`} lastName={user.apellido} name={user.nombre} email={user.email} administrador={user.administrador} />
                 )
             })
                
