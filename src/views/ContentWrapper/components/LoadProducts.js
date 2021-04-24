@@ -12,7 +12,7 @@ const [products, setProducts] = useState(0);
        .then (data =>{
         setProducts(data.meta.total_products);
         
-        })
+        },)
      },[])
 
 
