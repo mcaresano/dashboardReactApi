@@ -7,7 +7,7 @@ export  default function UsersListTitle(){
             <h6 className="col-sm-2 border-bottom card-title">Apellido</h6>
             <h6 className="col-sm-2 border-bottom card-title">Nombre</h6>
             <h6 className="col-sm-4 border-bottom card-title">Email</h6>
-            <h6 className="col-sm-1 border-bottom card-title">TipoUsuario</h6>
+            <h6 className="col-sm-2 border-bottom card-title">TipoUsuario</h6>
          </div>
       
     )

@@ -6,7 +6,7 @@ function UsuariosItem (props){
         <div className="col-sm-2 border-bottom">{props.lastName}</div>
         <div className="col-sm-2 border-bottom">{props.name}</div>
         <div className="col-sm-4 border-bottom">{props.email}</div>
-        <div className="col-sm-1 border-bottom">{valor}</div>
+        <div className="col-sm-2 border-bottom">{valor}</div>
       
     </div>
     );
