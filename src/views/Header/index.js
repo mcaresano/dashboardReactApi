@@ -1,4 +1,4 @@
-import HeaderIcon from "./HeaderIcon"
+
 
 function HeaderUser (props) {
 return (
@@ -9,10 +9,6 @@ return (
 </button>
 
 <ul className="navbar-nav ml-auto">
-
-    <HeaderIcon icono="fas fa-bell fa-fw" color="badge badge-success badge-counter" cantidad="3+"/>
-    <HeaderIcon icono="fas fa-shopping-cart fa-fw" color="badge badge-danger badge-counter" cantidad="4"/>
-    <HeaderIcon icono="fas fa-envelope fa-fw" color="badge badge-info badge-counter" cantidad="2"/>
 
     <div className="topbar-divider d-none d-sm-block"></div>
 

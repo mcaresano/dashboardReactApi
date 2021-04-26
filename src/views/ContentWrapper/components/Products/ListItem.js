@@ -1,7 +1,7 @@
 import {useState, useEffect} from "react";
 import Wine from "./Wine";
 
-export default function LoadProducts (){
+export default function ListItem (){
 
 const [products, setProducts] = useState([]);
 
@@ -27,4 +27,4 @@ const [products, setProducts] = useState([]);
         </div>          
         )
     
-    }
+    } 
